@@ -1,12 +1,37 @@
+import React, { Component } from "react";
 import "./App.css";
-import React from "react";
 
-const App = () => {
-  return (
-    <div>
-      <h1>Hello world!</h1>
-    </div>
-  );
-};
+class App extends Component {
+  state = {
+    counter: 0,
+  };
+
+  addHandler = () => {
+    this.setState({
+      counter: this.state.counter + 1,
+    });
+  };
+  removeHandler = () => {
+    this.setState({
+      counter: this.state.counter - 1,
+    });
+  };
+  resetHandler = () => {
+    this.setState({
+      counter: 0,
+    });
+  };
+
+  render() {
+    return (
+      <div className="container">
+        <h1 className="circle">{this.state.counter}</h1>
+        <button onClick={this.addHandler}>Like</button>
+        <button onClick={this.removeHandler}>Unlike</button>
+        <button onClick={this.resetHandler}>Reset</button>
+      </div>
+    );
+  }
+}
 
 export default App;
