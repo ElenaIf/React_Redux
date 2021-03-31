@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
+import Header from "./Header";
+import Footer from "./Footer";
 
 class App extends Component {
   state = {
@@ -12,11 +14,7 @@ class App extends Component {
     });
   };
   removeHandler = () => {
-    if (this.state.counter <= 0) {
-      this.setState({
-        counter: 0,
-      });
-    } else {
+    if (this.state.counter !== 0) {
       this.setState({
         counter: this.state.counter - 1,
       });
@@ -29,12 +27,28 @@ class App extends Component {
   };
 
   render() {
+    let circleClass = `
+    ${this.state.counter === 0 ? "" : this.state.counter % 2 === 0 ? "even" : "odd"} circle
+    `;
+
     return (
       <div className="container">
-        <h1 className="circle">{this.state.counter}</h1>
-        <button onClick={this.addHandler}>Like</button>
-        <button onClick={this.removeHandler}>Unlike</button>
-        <button onClick={this.resetHandler}>Reset</button>
+        <Header />
+        <main className="container">
+          <h1 className={circleClass}>{this.state.counter}</h1>
+          <div>
+            <button className="btn-add" onClick={this.addHandler}>
+              Like
+            </button>
+            <button className="btn-remove" onClick={this.removeHandler}>
+              Unlike
+            </button>
+            <button className="btn-reset" onClick={this.resetHandler}>
+              Reset
+            </button>
+          </div>
+        </main>
+        <Footer />
       </div>
     );
   }

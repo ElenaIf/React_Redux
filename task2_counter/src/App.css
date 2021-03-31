@@ -1,5 +1,9 @@
+body {
+  background-image: linear-gradient(to bottom, lightpink, lightblue);
+}
+
 .circle {
-  background-color: grey;
+  background-color: lightgrey;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -11,7 +15,49 @@
 button {
   padding: 1rem 2rem;
   margin: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-add {
+  background-color: lightgreen;
+}
+
+.btn-add:hover {
+  box-shadow: 1px 2px 2px salmon;
+  cursor: pointer;
+}
+
+.btn-remove {
+  background-color: lightpink;
+}
+
+.btn-remove:hover {
+  box-shadow: 1px 2px 2px lightgreen;
+  cursor: pointer;
+}
+
+.btn-reset:hover {
+  box-shadow: 1px 2px 2px salmon;
+  cursor: pointer;
+}
+
+.even {
+  background-color: lightblue;
+}
+
+.odd {
+  background-color: lightgreen;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
