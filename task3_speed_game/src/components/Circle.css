@@ -1,0 +1,38 @@
+.gameButton {
+	padding: 3rem;
+	border-radius: 50%;
+	margin: 1rem;
+	border: none;
+	background-color: lavender;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-decoration: none;
+}
+
+.notActive {
+	background-color: burlywood;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.notActive::after {
+	content: "";
+	height: 200%;
+	width: 200%;
+	position: absolute;
+	background-image: url("../assets/img/pokeball.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.gameButtons {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}

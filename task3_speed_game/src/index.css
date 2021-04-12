@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* To import font */
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Miltonian&family=Miltonian+Tattoo&display=swap");
+
+/* font-family: 'Michroma', sans-serif;
+font-family: 'Miltonian', cursive;
+font-family: 'Miltonian Tattoo', cursive; */
+
+html {
+	scroll-behavior: smooth;
+	font-size: 1rem;
+}
+
+body {
+	color: #111b67;
+	background: rgb(37, 203, 63);
+	background: linear-gradient(0deg, rgba(37, 203, 63, 1) 4%, rgba(7, 196, 235, 1) 56%);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.game {
+	background-color: rgba(255, 255, 255, 0.884);
+	max-width: 90vw;
+	border: none;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 2rem;
+}
+
+.instruction {
+	font-family: "Michroma", sans-serif;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.scoreResult {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 1rem;
+}
+
+h1 {
+	color: #ffde00;
+	font-family: "Miltonian Tattoo", cursive;
+	font-size: 5rem;
+	margin: 1rem;
+	text-shadow: 3px 3px 0 #3b4cca, -1px -1px 0 #3b4cca, 1px -1px 0 #3b4cca, -1px 1px 0 #3b4cca,
+		1px 1px 0 #3b4cca;
+}
+
+#score {
+	font-family: "Michroma", sans-serif;
+	font-size: 2rem;
+	margin: 1rem;
+}
+
+button {
+	text-decoration: none;
+	border: none;
+}
+
+.startStopButtons {
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	border-radius: 5px;
+	margin: 1rem;
+	background-color: #ffde00;
+}
+
+.startButton {
+	color: #3b4cca;
+	border: 2px solid #3b4cca;
+}
+
+.startButton:disabled {
+	color: #3b4cca56;
+	border: 2px solid #3b4cca56;
+	background-color: #ffdd0056;
+}
+
+.stopButton {
+	color: #cc0000;
+	border: 2px solid #cc0000;
+}
+
+.stopButton:disabled {
+	color: #cc000056;
+	border: 2px solid #cc000056;
+	background-color: #ffdd0056;
+}
+
+.active {
+	background: rgb(37, 203, 63);
+	background: radial-gradient(circle, rgba(37, 203, 63, 1) 4%, rgba(7, 196, 235, 1) 56%);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.active::after {
+	content: "";
+	height: 90%;
+	width: 90%;
+	position: absolute;
+	background-image: url("./assets/img/pikachu.svg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
