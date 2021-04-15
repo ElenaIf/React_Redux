@@ -1,71 +1,27 @@
-import Box from "./Box";
-import React, { Component } from "react";
+import React from "react";
+import Boxes_list from "./Boxes_list";
+import Animals_list from "./Animals_list";
 
-class Main extends Component {
-  state = {
-    persons: [
-      {
-        name: "Elena",
-        age: 33,
-        title: "CEO",
-      },
-      {
-        name: "Toni",
-        age: 33,
-        title: "Engineer",
-      },
-      {
-        name: "Petrovich",
-        age: 50,
-        title: "Cleaner",
-      },
-    ],
-  };
+import { Switch, Route } from "react-router-dom";
 
-  clickHere = () => {
-    this.setState({
-      persons: [
-        {
-          name: "No name here, sorry",
-          age: 100,
-          title: "No title",
-        },
-        {
-          name: "No nanem here",
-          age: 150,
-          title: "No title",
-        },
-        {
-          name: "Also no name",
-          age: 350,
-          title: "Nothing",
-        },
-      ],
-    });
-  };
+const Home = () => {
+	return (
+		<div>
+			<h2>Home</h2>
+		</div>
+	);
+};
 
-  render() {
-    return (
-      <main>
-        <button onClick={this.clickHere}>Click here also</button>
-        <Box
-          name={this.state.persons[0].name}
-          age={this.state.persons[0].age}
-          title={this.state.persons[0].title}
-        />
-        <Box
-          name={this.state.persons[1].name}
-          age={this.state.persons[1].age}
-          title={this.state.persons[1].title}
-        />
-        <Box
-          name={this.state.persons[2].name}
-          age={this.state.persons[2].age}
-          title={this.state.persons[2].title}
-        />
-      </main>
-    );
-  }
-}
+const Main = () => {
+	return (
+		<main>
+			<Switch>
+				<Route path="/" exact component={Home} />
+				<Route path="/boxes" component={Boxes_list} />
+				<Route path="/animals" component={Animals_list} />
+			</Switch>
+		</main>
+	);
+};
 
 export default Main;
