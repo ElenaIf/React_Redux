@@ -1,0 +1,14 @@
+.container {
+	min-height: 100vh;
+	width: 100vw;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.formAndView {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 1rem;
+}

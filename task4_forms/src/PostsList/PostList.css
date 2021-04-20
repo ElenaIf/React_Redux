@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap");
+
+.printResults {
+	border-radius: 16px;
+	background: #f69a73;
+	box-shadow: -20px -20px 38px #bd7759, 20px 20px 38px #ffbd8d;
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.printResults h3 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	color: white;
+	width: 100%;
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: left;
+}
+
+.nameCard {
+	border-radius: 20px;
+	background-color: white;
+	margin: 2rem;
+	padding: 2rem;
+	max-width: 300px;
+	font-family: "Roboto", sans-serif;
+	color: #6b321a;
+	line-height: 2rem;
+}
+
+.messageOnCard {
+	font-family: "Annie Use Your Telescope", cursive;
+	font-size: 1.5rem;
+}

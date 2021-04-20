@@ -1,0 +1,52 @@
+{
+	"notes": [
+		{
+			"id": 1,
+			"firsname": "Ivan",
+			"lastname": "Petrovich",
+			"phoneNumber": "49409403",
+			"message": "Some message here from Petrovich",
+			"role": "teacher"
+		},
+		{
+			"id": 2,
+			"firsname": "Elena",
+			"lastname": "Ivankina",
+			"phoneNumber": "4940944403",
+			"message": "Message from Elena and someone else",
+			"role": "admin"
+		},
+		{
+			"id": 3,
+			"firsname": "Toni",
+			"lastname": "Lähteensuo",
+			"phoneNumber": "74848444",
+			"message": "Message from Toni here",
+			"role": "student"
+		},
+		{
+			"id": 4,
+			"firsname": "Anna",
+			"lastname": "Karenina",
+			"phoneNumber": "74848444",
+			"message": "Hello, this is Anna. May I exchange my train ticket?",
+			"role": "student"
+		},
+		{
+			"id": 5,
+			"firsname": "Roy",
+			"lastname": "Swanson",
+			"phoneNumber": "0125645866",
+			"message": "Message from Roy here. I am in my cabin now",
+			"role": "student"
+		},
+		{
+			"id": 6,
+			"firsname": "Woman",
+			"lastname": "Wonder",
+			"phoneNumber": "74848444",
+			"message": "Time to save the world!",
+			"role": "student"
+		}
+	]
+}

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap");
+
+.viewForm {
+	flex: 1;
+	position: relative;
+	margin: 2rem;
+	padding: 3rem;
+	max-width: 400px;
+	border-radius: 29px;
+	background: linear-gradient(315deg, #dd8b68, #ffa57b);
+	box-shadow: -22px -22px 24px #b47054, 22px 22px 24px #ffc492;
+}
+
+.viewForm h3 {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 24px;
+	color: white;
+	width: 100%;
+}
+
+.viewFormInner p {
+	margin-bottom: 2.5rem;
+	font-family: "Roboto", sans-serif;
+	color: #6b493a;
+}
+
+.handWritten {
+	font-family: "Annie Use Your Telescope", cursive;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	color: white;
+}
