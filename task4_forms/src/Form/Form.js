@@ -4,7 +4,7 @@ import "./Form.css";
 
 const Form = (props) => {
 	return (
-		<form className="inputForm">
+		<form className="inputForm" onSubmit={props.submit}>
 			<div class="form-left-decoration"></div>
 			<div class="form-right-decoration"></div>
 			<div class="circle"></div>

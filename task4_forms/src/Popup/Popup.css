@@ -1,0 +1,92 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #f69a73b6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup {
+	min-width: 30vw;
+	min-height: 40vh;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	padding: 2rem;
+	font-family: "Roboto", sans-serif;
+	line-height: 2rem;
+}
+
+.popup-left-decoration,
+.popup-right-decoration {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	background: white;
+	border-radius: 20px;
+}
+.popup-left-decoration {
+	bottom: 60px;
+	left: -30px;
+}
+.popup-right-decoration {
+	top: 60px;
+	right: -30px;
+}
+
+.popup-left-decoration:before,
+.popup-left-decoration:after,
+.popup-right-decoration:before,
+.popup-right-decoration:after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 20px;
+	border-radius: 30px;
+	background: white;
+}
+
+.popup-left-decoration:before {
+	top: -20px;
+}
+.popup-left-decoration:after {
+	top: 20px;
+	left: 10px;
+}
+.popup-right-decoration:before {
+	top: -20px;
+	right: 0;
+}
+.popup-right-decoration:after {
+	top: 20px;
+	right: 10px;
+}
+
+.popupButtons {
+	align-self: center;
+}
+
+.popupButtons button {
+	margin: 0.5rem;
+	padding: 0.8rem;
+	border-radius: 5px;
+	border: none;
+	background-color: #f69a73;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	cursor: pointer;
+}
+
+.popup p {
+	color: #6b493a;
+}
