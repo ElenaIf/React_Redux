@@ -12,7 +12,7 @@ const PostsList = ({ notes }) => {
 						<div key={note.id} className="nameCard">
 							<h4>
 								{" "}
-								{note.firsname} {note.lastname}
+								{note.firstname} {note.lastname}
 							</h4>
 							<p>Phone: {note.phoneNumber}</p>
 							<p>Role: {note.role}</p>

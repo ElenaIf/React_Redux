@@ -1,52 +1,92 @@
 {
-	"notes": [
-		{
-			"id": 1,
-			"firsname": "Ivan",
-			"lastname": "Petrovich",
-			"phoneNumber": "49409403",
-			"message": "Some message here from Petrovich",
-			"role": "teacher"
-		},
-		{
-			"id": 2,
-			"firsname": "Elena",
-			"lastname": "Ivankina",
-			"phoneNumber": "4940944403",
-			"message": "Message from Elena and someone else",
-			"role": "admin"
-		},
-		{
-			"id": 3,
-			"firsname": "Toni",
-			"lastname": "Lähteensuo",
-			"phoneNumber": "74848444",
-			"message": "Message from Toni here",
-			"role": "student"
-		},
-		{
-			"id": 4,
-			"firsname": "Anna",
-			"lastname": "Karenina",
-			"phoneNumber": "74848444",
-			"message": "Hello, this is Anna. May I exchange my train ticket?",
-			"role": "student"
-		},
-		{
-			"id": 5,
-			"firsname": "Roy",
-			"lastname": "Swanson",
-			"phoneNumber": "0125645866",
-			"message": "Message from Roy here. I am in my cabin now",
-			"role": "student"
-		},
-		{
-			"id": 6,
-			"firsname": "Woman",
-			"lastname": "Wonder",
-			"phoneNumber": "74848444",
-			"message": "Time to save the world!",
-			"role": "student"
-		}
-	]
+  "notes": [
+    {
+      "id": 1,
+      "firstname": "Ivan",
+      "lastname": "Petrovich",
+      "phoneNumber": "49409403",
+      "message": "Some message here from Petrovich",
+      "role": "teacher"
+    },
+    {
+      "id": 2,
+      "firstname": "Elena",
+      "lastname": "Ivankina",
+      "phoneNumber": "4940944403",
+      "message": "Message from Elena and someone else",
+      "role": "admin"
+    },
+    {
+      "id": 3,
+      "firstname": "Toni",
+      "lastname": "Lähteensuo",
+      "phoneNumber": "74848444",
+      "message": "Message from Toni here",
+      "role": "student"
+    },
+    {
+      "id": 4,
+      "firstname": "Anna",
+      "lastname": "Karenina",
+      "phoneNumber": "74848444",
+      "message": "Hello, this is Anna. May I exchange my train ticket?",
+      "role": "student"
+    },
+    {
+      "id": 5,
+      "firstname": "Roy",
+      "lastname": "Swanson",
+      "phoneNumber": "0125645866",
+      "message": "Message from Roy here. I am in my cabin now",
+      "role": "student"
+    },
+    {
+      "id": 6,
+      "firstname": "Woman",
+      "lastname": "Wonder",
+      "phoneNumber": "74848444",
+      "message": "Time to save the world!",
+      "role": "student"
+    },
+    {
+      "firstname": "Test 1",
+      "lastname": "Test2",
+      "phoneNumber": "0123446779",
+      "role": "teacher",
+      "message": "Hello, this message finally works!",
+      "id": 7
+    },
+    {
+      "firstname": "FirstName",
+      "lastname": "LastName",
+      "phoneNumber": "01394959",
+      "role": "teacher",
+      "message": "Hello from new message again",
+      "id": 8
+    },
+    {
+      "firstname": "Harry",
+      "lastname": "Potter",
+      "phoneNumber": "0566868888888",
+      "role": "",
+      "message": "Hello",
+      "id": 9
+    },
+    {
+      "firstname": "1111",
+      "lastname": "1111",
+      "phoneNumber": "1111",
+      "role": "teacher",
+      "message": "11111",
+      "id": 10
+    },
+    {
+      "firstname": "222",
+      "lastname": "222",
+      "phoneNumber": "222",
+      "role": "teacher",
+      "message": "2222",
+      "id": 11
+    }
+  ]
 }

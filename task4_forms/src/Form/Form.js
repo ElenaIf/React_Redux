@@ -2,20 +2,20 @@ import React from "react";
 
 import "./Form.css";
 
-const Form = (props) => {
+const Form = ({ inputHandler, submit }) => {
 	return (
-		<form className="inputForm" onSubmit={props.submit}>
-			<div class="form-left-decoration"></div>
-			<div class="form-right-decoration"></div>
-			<div class="circle"></div>
-			<div class="form-inner">
+		<form className="inputForm" onSubmit={submit}>
+			<div className="form-left-decoration"></div>
+			<div className="form-right-decoration"></div>
+			<div className="circle"></div>
+			<div className="form-inner">
 				<h3>Please fill the form below</h3>
 				<input
 					type="text"
 					name="firstname"
 					id="firstname"
 					placeholder="First Name"
-					onChange={props.inputHandler}
+					onChange={inputHandler}
 				/>
 
 				<input
@@ -23,7 +23,7 @@ const Form = (props) => {
 					name="lastname"
 					id="lastname"
 					placeholder="Last Name"
-					onChange={props.inputHandler}
+					onChange={inputHandler}
 				/>
 
 				<input
@@ -31,10 +31,10 @@ const Form = (props) => {
 					name="phoneNumber"
 					id="phoneNumber"
 					placeholder="Phone number"
-					onChange={props.inputHandler}
+					onChange={inputHandler}
 				/>
 
-				<select name="role" id="role" onChange={props.inputHandler}>
+				<select name="role" id="role" onChange={inputHandler}>
 					<option value="" disabled hidden selected>
 						Choose your role
 					</option>
@@ -49,7 +49,7 @@ const Form = (props) => {
 					cols="30"
 					rows="5"
 					placeholder="Message"
-					onChange={props.inputHandler}
+					onChange={inputHandler}
 				></textarea>
 
 				<button type="submit">Send</button>

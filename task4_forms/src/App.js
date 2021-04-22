@@ -9,12 +9,14 @@ import Popup from "./Popup/Popup";
 
 class App extends Component {
 	state = {
-		firstname: "",
-		lastname: "",
-		phoneNumber: "",
-		role: "",
-		message: "",
 		notes: [],
+		inputData: {
+			firstname: "",
+			lastname: "",
+			phoneNumber: "",
+			role: "",
+			message: "",
+		},
 		showPopup: false,
 	};
 
@@ -26,7 +28,7 @@ class App extends Component {
 
 	inputHandler = (input_value) => {
 		this.setState({
-			[input_value.target.name]: input_value.target.value,
+			inputData: { ...this.state.inputData, [input_value.target.name]: input_value.target.value },
 		});
 	};
 
@@ -35,28 +37,27 @@ class App extends Component {
 		e.preventDefault();
 	};
 
+	sendDataHandler = () => {
+		const requestOptions = {
+			method: "POST",
+			headers: { "content-type": "application/json" },
+			body: JSON.stringify(this.state.inputData),
+		};
+		fetch("http://localhost:3001/notes", requestOptions);
+		alert("Note is posted", window.location.reload());
+	};
+
 	render() {
 		return (
 			<div className="container">
 				<div className="formAndView">
 					<Form inputHandler={this.inputHandler} submit={this.popupHandler} />
-					<View
-						firstname={this.state.firstname}
-						lastname={this.state.lastname}
-						phoneNumber={this.state.phoneNumber}
-						role={this.state.role}
-						message={this.state.message}
-					/>
+					<View {...this.state.inputData} />
 				</div>
+
 				<Posts notes={this.state.notes} />
 				{this.state.showPopup === true && (
-					<Popup
-						firstname={this.state.firstname}
-						lastname={this.state.lastname}
-						phoneNumber={this.state.phoneNumber}
-						role={this.state.role}
-						message={this.state.message}
-					/>
+					<Popup {...this.state.inputData} submit={this.sendDataHandler} />
 				)}
 			</div>
 		);

@@ -6,21 +6,23 @@ const closePopup = () => {
 	window.location.reload();
 };
 
-const Popup = (props) => {
+const Popup = ({ firstname, lastname, phoneNumber, message, role, submit }) => {
 	return (
 		<div className="overlay">
 			<div className="popup">
-				<div class="popup-left-decoration"></div>
-				<div class="popup-right-decoration"></div>
+				<div className="popup-left-decoration"></div>
+				<div className="popup-right-decoration"></div>
 
-				<p>First name: {props.firstname}</p>
-				<p>Last name: {props.lastname}</p>
-				<p>Phone number: {props.phoneNumber}</p>
-				<p>Role: {props.role}</p>
-				<p>Message: {props.message}</p>
+				<p>First name: {firstname}</p>
+				<p>Last name: {lastname}</p>
+				<p>Phone number: {phoneNumber}</p>
+				<p>Role: {role}</p>
+				<p>Message: {message}</p>
 				<div className="popupButtons">
-					<button onClick={closePopup}>Yes, submit</button>
-					<button onClick={closePopup}>No, delete</button>
+					<button onClick={submit}>Yes, submit</button>
+					<button type="submit" onClick={closePopup}>
+						No, delete
+					</button>
 				</div>
 			</div>
 		</div>
