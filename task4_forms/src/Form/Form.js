@@ -2,6 +2,29 @@ import React from "react";
 
 import "./Form.css";
 
+const options = [
+	{
+		id: 1,
+		label: "Choose your role",
+		value: "",
+	},
+	{
+		id: 2,
+		label: "Teacher",
+		value: "teacher",
+	},
+	{
+		id: 3,
+		label: "Student",
+		value: "student",
+	},
+	{
+		id: 4,
+		label: "Other",
+		value: "other",
+	},
+];
+
 const Form = ({ inputHandler, submit }) => {
 	return (
 		<form className="inputForm" onSubmit={submit}>
@@ -35,12 +58,14 @@ const Form = ({ inputHandler, submit }) => {
 				/>
 
 				<select name="role" id="role" onChange={inputHandler}>
-					<option value="" disabled hidden selected>
+					{/* <option value="" disabled hidden selected>
 						Choose your role
-					</option>
-					<option value="student">Student</option>
-					<option value="teacher">Teacher</option>
-					<option value="other">Other</option>
+					</option> */}
+					{options.map((option) => (
+						<option value={option.value} key={option.id}>
+							{option.label}
+						</option>
+					))}
 				</select>
 
 				<textarea
