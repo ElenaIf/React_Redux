@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
 	return (
@@ -11,10 +11,10 @@ const Nav = () => {
 				</li>
 
 				<li>
-					<Link to="/boxes">Boxes</Link>
+					<NavLink to="/boxes">Boxes</NavLink>
 				</li>
 				<li>
-					<Link to="/animals">Animals</Link>
+					<NavLink to="/animals">Animals</NavLink>
 				</li>
 			</ul>
 		</nav>
