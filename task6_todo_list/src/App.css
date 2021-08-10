@@ -26,4 +26,42 @@
 .item-text {
   display: inline-block;
   cursor: pointer;
+  margin: 0 1rem;
+ font-size: 1rem;
+}
+
+input[type=text] {
+  padding:10px;
+  border-width: 1px;
+  border-color: #61dafb;
+  border-radius:10px;
+  margin: 1rem;
+  min-width: 30vw;
+}
+
+button {
+  background-color: #61dafb;
+  border: none;
+  padding: 12px;
+  border-radius:10px;
+}
+
+button:hover {
+  box-shadow:0 0 15px 4px rgba(16, 10, 97, 0.336);
+  cursor: pointer;
+}
+
+.close-buttton {
+  color: #61dafb;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.spot {
+  color: #282c34;
 }
