@@ -1,0 +1,22 @@
+{
+	"items": [
+		{
+			"id": 1,
+			"name_en": "cat",
+			"name_fi": "kissa",
+			"img": "./img/cat-solid.svg"
+		},
+		{
+			"id": 2,
+			"name_en": "dog",
+			"name_fi": "koira",
+			"img": "./img/dog-solid.svg"
+		},
+		{
+			"id": 3,
+			"name_en": "horse",
+			"name_fi": "hevonen",
+			"img": "./img/horse-solid.svg"
+		}
+	]
+}
