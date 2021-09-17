@@ -1,14 +1,3 @@
 {
-	"notes": [
-		{
-			"id": 1,
-			"text": "Hello world!",
-			"completed": false
-		},
-		{
-			"id": 2,
-			"text": "Second note",
-			"completed": false
-		}
-	]
+  "notes": []
 }

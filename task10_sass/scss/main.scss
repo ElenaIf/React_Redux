@@ -1,0 +1,11 @@
+$main-color: red;
+$background: green;
+
+body {
+	background-color: $background;
+}
+
+h1 {
+	color: $main-color;
+	text-transform: uppercase;
+}
